@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Hypsan"
+run/main_scene="uid://cf3tcd2ba52v1"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
 
 [rendering]
 
