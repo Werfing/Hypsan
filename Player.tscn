@@ -3,17 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://bs4jf0uwtp0be" path="res://character-7733757_1280.png" id="1_xhfnw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
-size = Vector2(69, 108)
+size = Vector2(773, 1099)
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 38)
+texture = ExtResource("1_xhfnw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(54.5, -75)
+position = Vector2(0.5, -14.5)
 shape = SubResource("RectangleShape2D_kpjcp")
-
-[node name="Character-77337571280" type="Sprite2D" parent="."]
-position = Vector2(55, -70)
-scale = Vector2(0.0869803, 0.096875)
-texture = ExtResource("1_xhfnw")
