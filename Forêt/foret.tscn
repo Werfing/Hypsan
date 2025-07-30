@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bypowa3henr4o"]
+[gd_scene load_steps=3 format=3 uid="uid://bypowa3henr4o"]
 
 [ext_resource type="Texture2D" uid="uid://vfdj7kixcu67" path="res://Forêt/Forêt.png" id="1_pysga"]
+[ext_resource type="Script" uid="uid://hj6ssr71lsaa" path="res://Forêt/foret.gd" id="1_ujv8i"]
 
 [node name="Foret" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_ujv8i")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -29,3 +31,5 @@ offset_top = 6.0
 offset_right = 618.0
 offset_bottom = 37.0
 text = "Retour à la taverne"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
