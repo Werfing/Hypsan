@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsvkthsrs0n4l"]
+
+[ext_resource type="Script" uid="uid://40d2ygxqbjpj" path="res://Taverne/taverne.gd" id="1_cnkb3"]
+[ext_resource type="Texture2D" uid="uid://dhgiqhr52ttal" path="res://Taverne/Tavern1024x768.png" id="1_jxkwn"]
+
+[node name="Taverne" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cnkb3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_jxkwn")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 38.0
+offset_right = 1021.0
+offset_bottom = 79.0
+text = "Aller à la forêt"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
